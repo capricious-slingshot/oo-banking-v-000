@@ -31,6 +31,6 @@ class Transfer
       sender.balance += amount
       receiver.balance -= amount
     end
-    status = 'reversed'
+    self.status = 'reversed'
   end
 end
