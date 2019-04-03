@@ -51,6 +51,7 @@ describe 'Transfer' do
       expect(amanda.balance).to eq(950)
       expect(avi.balance).to eq(1050)
       expect(transfer.status).to eq("complete")
+      expect(bad_transfer.execute_transaction).to eq("Transaction completed")
     end
 
     it "each transfer can only happen once" do
